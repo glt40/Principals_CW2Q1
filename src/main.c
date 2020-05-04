@@ -34,8 +34,10 @@ int main() {
     // Generates array of int
     // SIZE 100 specified in question, MAX 999 chosen arbitrarily
     int *ARR_POINT = arr_gen(SIZE, MAX);
+    printf("UNSORTED INTS: \n");
     cs_print(ARR_POINT, SIZE);
     cs_sort(ARR_POINT, SIZE);
+    printf("SORTED INTS: \n");
     cs_print(ARR_POINT, SIZE);
     return 0;
 }
